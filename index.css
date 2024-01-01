@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  /* Background */
+  --bg-primary: #f9fbfe;
+  /* Text */
+  --color-primary: #333;
+  --color-secondary: #000;
+  --color-white: #fff;
+  /* Button */
+  --button-bg-primary: #5dade2;
+  /* MEDIA QUERIES*/
+  --container-width-sm: 90%;
+  --container-width-md: 85%;
+  --container-width-lg: 75%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: 200;
+  color: var(--color-primary);
+  background-color: var(--bg-primary);
+}
+
+&::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+h2,
+p {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+button {
+  cursor: pointer;
+  width: max-content;
+  padding: 1.2rem 1.4rem;
+  border: none;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 0.4rem;
+  font-family: "Poppins";
+  background-color: transparent;
+  color: var(--color-primary);
+  outline: none;
+}
+input[type="text"]::placeholder {
+  color: var(--button-bg-primary);
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.4rem;
+  accent-color: var(--button-bg-primary);
+}
+
+/*------------------------------MQ------------------------------*/
+.container {
+  width: var(--container-width-sm);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: var(--container-width-lg);
+  }
+}
+/*==========================================================================*/
+
+/*------------------------------GENERAL STYLES------------------------------*/
+.mb {
+  margin-bottom: 1.2rem;
+}
+
+/*==========================================================================*/
+
+/*------------------------------TEXT STYLINGS------------------------------*/
+.sub-heading-first-word {
+  color: #000;
+  font-weight: 500;
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: #999;
+}
+/*==========================================================================*/
+
+/*------------------------------BUTTON STYLINGS------------------------------*/
+.btn {
+  background-color: var(--button-bg-primary);
+  color: var(--color-white);
+  border: 1px solid var(--button-bg-primary);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--button-bg-primary);
+}
+/*==========================================================================*/
+
+/*--------------------------------------TODO ITEM--------------------------- */
+.todo-tems-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-items-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.todoItem-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.todoItem-content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  border-left: 5px solid var(--button-bg-primary);
+  border-radius: 0.4rem;
+  padding: 0 0 0 1.2rem;
+}
+
+.todoItem-delete-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--button-bg-primary);
+  font-size: 1.6rem;
+}
+
+.todoItem-delete-icon-container:hover {
+  color: crimson;
+}

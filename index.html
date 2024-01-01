@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/ca3b81fa8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header><h1>Todo</h1></header>
+    <main>
+      <article class="container">
+        <section>
+          <h2><span class="sub-heading-first-word">Create</span> Task</h2>
+          <form id="inputForm">
+            <input
+              id="taskInput"
+              class="mb"
+              type="text"
+              placeholder="What needs to be done?"
+              required
+            />
+            <button class="btn" type="submit">Add</button>
+          </form>
+        </section>
+        <section>
+          <section class="todo-tems-container-header">
+            <h2><span class="sub-heading-first-word">My</span> Tasks</h2>
+            <button id="saveTodoBtn" class="btn" type="button">Save</button>
+          </section>
+          <ul class="todo-items-container" id="todoItemsContainer"></ul>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
